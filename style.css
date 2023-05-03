@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+/* index.html code */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgba(255, 158, 120, 0.288);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 25px;
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 20px 0;
+    font-size: 1.5625rem;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+
+.info{
+    /* background-color: rgb(0, 0, 255); */
+    height: 80vh;
+    width: 80vw;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.myPic{
+    height: 80vh;
+}
+.myInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    padding: 0px 30px;
+}
+
+.hello{
+    font-size: 4.375rem;
+}
+.name{
+    font-size: 3.75rem;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.about{
+    font-size: 1.5625rem;
+}
+.moreabout{
+    /* padding: 0px 0px; */
+    margin: 50px 0px;
+    
+}
+.myInfo span{
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+.buttons{
+    margin-top: 1.875rem;
+    font-size: 16px;
+}
+.buttons button{
+    padding: 10px 10px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: bisque;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 3px;
+    
+}
+.buttons button:hover{
+    background-color: rgb(250, 206, 153);
+}
+
+.myInfo h1{
+    margin: 35px 0px;
+    padding: 0px 10px;
+    font-family: 'Source Code Pro', monospace;
+    background-color: black;
+    color: white;
+    
+}
+
+.moreabout h2{
+    margin: 20px 0;
+    margin-bottom: -35px;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+}
+.skill{
+    padding: 0px 8px;
+    background-color: red;
+    width: 200px;
+    height: 10px;
+    color: white; 
+    font-weight: bold;
+}
+.hundered{
+    padding: 0px 8px;
+    background-color: red;
+    width: 200px;
+    height: 20px;
+    color: white;
+    border: 2px solid black;
+ 
+}
+.seventy{
+    padding: 0px 8px;
+    background-color: red;
+    width: 150px;
+    height: 20px;
+    color: white; 
+    border: 2px solid rgb(0, 0, 0);
+    
+}
+.thirty{
+    padding: 0px 8px;
+    background-color: red;
+    width: 40px;
+    height: 20px;
+    color: white; 
+    border: 2px solid black;
+
+}
+.zero{
+    padding: 0px 8px;
+    background-color: red;
+    width: 10px;
+    height: 20px;
+    color: white; 
+    border: 2px solid black;
+}
+.fifty{
+    padding: 0px 8px;
+    background-color: red;
+    width: 100px;
+    height: 20px;
+    color: white; 
+    border: 2px solid black;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 20px;
+}
+
+
+.sidebarGo{
+    transform: translate(-400px, 0);
+    position: absolute;
+}
+@media (max-width: 1264px){
+    /* *{
+        background-color: red;
+    }
+    .sidebar{
+        transform: translate(-400px, 0);
+        position: absolute;
+    } */
+    .myInfo{
+        font-size: 10px;
+    }
+    .myPic{
+        display: none;
+    }
+    .buttons{
+        font-size: 0.625rem;
+    }
+}
